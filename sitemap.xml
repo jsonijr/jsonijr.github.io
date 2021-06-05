@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+
+	  Hey!
+	  This web page is actually a data file that is meant to be
+	   read by RSS reader programs.
+	  See https://bionota.github.io/sitemap.html to go to
+	   the human-readable sitemap page.
+
+	-->
+  <url>
+    <loc>https://jsonijr.github.io/</loc>
+    <lastmod>2021-06-05T16:50:15+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://jsonijr.github.io/sitemap.html</loc>
+    <lastmod>2021-06-05T16:50:15+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://jsonijr.github.io/sitemap.txt</loc>
+    <lastmod>2021-06-05T16:50:15+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://jsonijr.github.io/sitemap.xml</loc>
+    <lastmod>2021-06-05T16:50:15+00:00</lastmod>
+  </url>
+</urlset>
+<!-- generated-on="2021-06-05T16:50:15+00:00" -->
+<!-- items="4" -->

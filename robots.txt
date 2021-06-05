@@ -1,12 +1,8 @@
-User-agent: Mediapartners-Google 
-Disallow:
-
+#robots.txt from advocacia jsjr
 User-agent: *
-Disallow: /quiztest
-Disallow: /images
-Disallow: /asp/demo_db_edit.asp
-Disallow: *.htm
-Disallow: *.html
-Disallow: *.aspx$
-Disallow: *.php$
+Disallow: /res
+
+#all robots read the sitemap file
+#this should be a full url
+Sitemap: https://jsonijr.github.io/sitemap.xml
 

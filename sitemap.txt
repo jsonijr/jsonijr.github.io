@@ -1,0 +1,4 @@
+https://jsonijr.github.io/
+https://jsonijr.github.io/sitemap.html
+https://jsonijr.github.io/sitemap.txt
+https://jsonijr.github.io/sitemap.xml
