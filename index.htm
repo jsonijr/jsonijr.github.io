@@ -21,18 +21,28 @@ serviços, litígio, processo, justiça, proteção">
 <style>
 	.h-card
 	{
-		padding: .4em .2em .4em 2em;
+		margin: .4em auto .4em auto;
 		display: block;
 		/* text-align: left; */
 	}
+	.h-card p
+	{
+		margin: .4em;
+	}
 
-	.t01 th,
-	.t01 td
+	.bigger h2
+	{
+		font-size: 36px;
+	}
+
+
+	#t01 th,
+	#t01 td
 	{
 		text-align: center;
 	}
 
-	.t01 td:nth-of-type(3)
+	#t01 td:nth-of-type(3)
 	{
 		text-align: left;
 		text-align: justify; text-justify: inter-word;
@@ -42,18 +52,27 @@ serviços, litígio, processo, justiça, proteção">
 		hyphens: auto;
 	}
 
-
-	.t01 td 
+	#t01 td 
 	{
 		vertical-align: middle;
 	}
 
-	td img
+	#t01 td img
 	{
 		max-width: 80px;
 		height: auto;
 
+		/* transform: scale(.6,.6); */
+
 	}
+
+
+	#img01
+	{
+		margin-top: 1.3em;
+
+	}
+
 </style>
 </head>
 
@@ -79,8 +98,8 @@ serviços, litígio, processo, justiça, proteção">
     </div>
   </div>
   <div class="w3-half w3-blue-grey w3-container" style="height:800px">
-    <div class="w3-padding-64 w3-center">
-      <h1>Sobre</h1>
+    <div class="w3-padding-64 w3-center bigger">
+      <h2>Sobre</h2>
       <img src="gfx/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
       <div class="w3-left-align w3-padding-large">
 
@@ -147,14 +166,14 @@ serviços, litígio, processo, justiça, proteção">
       <h2>Atuação</h2>
       <p>Atuação profissional jurídica.</p>
       <div class="w3-container w3-responsive">
-        <table class="w3-table t01">
+        <table id="t01" class="w3-table">
           <tr>
             <th colspan="2">Área</th>
             <th>Descrição</th>
           </tr>
 
           <tr class="w3-white">
-            <td><img src="gfx/civil.png" alt="ícone ilustrativo" width="128" height="128"></td>
+            <td><img src="gfx/civil-small.png" alt="ícone ilustrativo" width="78" height="78"></td>
             <td>Direito Civil</td>
             <td><strong>Direito civil</strong> é um ramo do Direito que trata do conjunto de normas
 	    reguladoras dos direitos e obrigações de ordem privada concernente às pessoas,
@@ -190,7 +209,7 @@ serviços, litígio, processo, justiça, proteção">
 
 
           <tr class="w3-white">
-            <td><img src="gfx/family.svg" alt="ícone ilustrativo" width="1068" height="1460"></td>
+            <td><img src="gfx/family-small.png" alt="ícone ilustrativo" width="78" height="107"></td>
             <td>Direito de Família</td>
             <td><strong>Direito de família</strong> é um ramo do direito que trata das questões
 	    e litígios entre entes da comunidade familiar. Possui normas jurídicas
@@ -233,38 +252,36 @@ serviços, litígio, processo, justiça, proteção">
 <!-- Third Grid: Swing By & Contact -->
 <div class="w3-row" id="contato">
   <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64" style="padding-bottom:16px!important;">
-      <h1>Localização</h1>
+    <div class="w3-padding-64 bigger" style="padding-bottom:16px!important;">
+      <h2>Localização</h2>
     </div>
-    <div class="w3-padding-24">
+    <div>
+      <!-- <p>Contacte-nos pelos endereços abaixo.</p> -->
 
+	<!-- Location -->
+	<address class="h-card">
 
-      <p>Contacte-nos pelos endereços abaixo.</p>
-
-
-
-<!-- Location -->
-<address class="h-card">
-
-	<p><span title="Advogado"class="p-honorific-suffix">Dr.</span> <span class="p-name">Jamil Soni Jr</span></p>
-	<p>Rua Osório Ribas de Paula, 824</p>
-	<p>86800-140</p>
-	<p class="p-locality">Apucarana, PR</p>
-	<p class="p-country-name">Brasil</p>
-	<p class="u-email"><a href="mailto:jsonijr@gmail.com">jsonijr@gmail.com</a></p>
-	<p>☎ 43 3033-1020</p>
-	<!-- ✆☎☏ -->
-</address>
+		<p><span title="Advogado"class="p-honorific-suffix">Dr.</span> <span class="p-name">Jamil Soni Jr</span></p>
+		<p>Rua Osório Ribas de Paula, 824</p>
+		<p>86800-140</p>
+		<p class="p-locality">Apucarana, PR</p>
+		<p class="p-country-name">Brasil</p>
+		<p class="u-email"><a href="mailto:jsonijr@gmail.com">jsonijr@gmail.com</a></p>
+		<p>☎ 43 3033-1020</p>
+		<!-- ✆☎☏ -->
+	</address>
 
       <div class="w3-center">
-      	<a target="_blank" href="https://goo.gl/maps/zeAJ2sZpm8QRJxN1A"><img src="gfx/mapaSmaller.png" style="max-width:520px;height:auto;" alt="Mapa da região" width="320" height="225"></a>
+      	<a target="_blank" href="https://goo.gl/maps/zeAJ2sZpm8QRJxN1A"><img id="img01" src="gfx/mapaSmaller.png" style="max-width:520px;height:auto;" alt="Mapa da região" width="320" height="225"></a>
 	</div>
     </div>
   </div>
   <div class="w3-half w3-orange w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-padding-large">
-      <h1>Problema Jurídico?</h1>
+    <div class="w3-padding-64 w3-padding-large bigger">
+      <h2>Problema Jurídico?</h2>
       <p class="w3-opacity">VAMOS REPENSAR ESSA IDEIA!</p>
+
+	<br>
       <div class="w3-container w3-card w3-padding-32 w3-white" action="https://www.w3schools.com/action_page.php" target="_blank">
         <div class="w3-section">
 		<!-- <p>Nosso pensamento é com o cliente e
