@@ -1,6 +1,6 @@
 #!/bin/bash
 # sitemap.sh -- SITEMAP SYSTEM
-# v0.4.20.C1  may/2021  by mountaineerbr
+# v0.4.20.C2  may/2021  by mountaineerbr
 #   __ _  ___  __ _____  / /____ _(_)__  ___ ___ ____/ /  ____
 #  /  ' \/ _ \/ // / _ \/ __/ _ `/ / _ \/ -_) -_) __/ _ \/ __/
 # /_/_/_/\___/\_,_/_//_/\__/\_,_/_/_//_/\__/\__/_/ /_.__/_/   
@@ -78,10 +78,12 @@ XMLWARNING='	<!--
 
 #html tags for injection
 HTMLHEAD='<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Website map, navigate to all pages</title>
+<title>Mapa do Site - Escritório de Advocacia</title>
 <meta name="resource-type" content="document">
-<meta name="description" content="Site map for human visitors; this navigation page may be preferable for some people to use">
-<meta name="keywords" content="navigation, navegação, accessibility, acessibilidade, interface, alternativo, alternative, user navigation, navegação de usuário, discover the webste, descubra o website">
+<meta name="description" content="Mapa do site.">
+<meta name="keywords" content="navigation, navegação, accessibility,
+acessibilidade, interface, alternativo, alternative, user navigation,
+navegação de usuário, discover the webste, descubra o website">
 <meta name="distribution" content="global">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <link rev="made" href="mailto:jamilbio20[[at]]gmail[[dot]]com"> -->
