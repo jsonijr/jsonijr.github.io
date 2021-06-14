@@ -1,6 +1,6 @@
 #!/bin/bash
 # sitemap.sh -- SITEMAP SYSTEM
-# v0.4.20.C3  jun/2021  by mountaineerbr
+# v0.4.20.C4  jun/2021  by mountaineerbr
 #   __ _  ___  __ _____  / /____ _(_)__  ___ ___ ____/ /  ____
 #  /  ' \/ _ \/ // / _ \/ __/ _ `/ / _ \/ -_) -_) __/ _ \/ __/
 # /_/_/_/\___/\_,_/_//_/\__/\_,_/_/_//_/\__/\__/_/ /_.__/_/   
@@ -87,7 +87,7 @@ navegação de usuário, discover the webste, descubra o website">
 <meta name="distribution" content="global">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <link rev="made" href="mailto:jamilbio20[[at]]gmail[[dot]]com"> -->
-<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <style>
 	H1, H1 + P
 	{
