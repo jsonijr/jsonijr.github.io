@@ -1,6 +1,6 @@
 #!/bin/bash
 # sitemap.sh -- SITEMAP SYSTEM
-# v0.4.20.C2  may/2021  by mountaineerbr
+# v0.4.20.C3  jun/2021  by mountaineerbr
 #   __ _  ___  __ _____  / /____ _(_)__  ___ ___ ____/ /  ____
 #  /  ' \/ _ \/ // / _ \/ __/ _ `/ / _ \/ -_) -_) __/ _ \/ __/
 # /_/_/_/\___/\_,_/_//_/\__/\_,_/_/_//_/\__/\__/_/ /_.__/_/   
@@ -28,7 +28,7 @@ EXARR=(
 	#valid pattern must run in `sed -E "s,PATTERN,,"`
 	#do escape \ as \\
 
-	'index\.html$' 		#don't add index.html but their parent dir only
+	'index\.html?$' 	#don't add index.html but their parent dir only
 	'.*/[._].*' 		#files starting with either . or (hidden or unlisted)
 	'.*/[a-z]/.*' 		#template files such as a.html, z.html, etc
 	'.*/[a-z]\.html$'  	#unlisted directories
@@ -43,7 +43,7 @@ EXARR=(
 )
 
 #exclude for `tree` (should be equivalent to $EXARR[@])
-EXTREE='[._]*|[a-z].html|[a-z]|index.html|bak|css|gfx|js|misc|res|google*|thumb|media|sitemap.xml|sitemap.html'
+EXTREE='[._]*|[a-z].html|[a-z]|index.htm|bak|css|gfx|js|misc|res|google*|thumb|media|sitemap.xml|sitemap.html'  #|index.html
 
 #sitemap files
 #txt
@@ -390,7 +390,7 @@ echo "$SN: create sitemap.html with  \`tree' package.." >&2
 #remove default meta tags
 #eval "$(dircolors -b)"
 tree -C -r -H "." -P "$EXTENSIONSTREE" -I "$EXTREE" \
-	-T Sitemap -L 6 -F -v --noreport --charset utf-8 |
+	-T 'Mapa do sítio' -L 6 -F -v --noreport --charset utf-8 |
 	sed '/<meta/,/<title/ d; s|.*/blog/podcast/.*|| ;/<p class="VERSION">/,/<\/p>/ d' > "$SMAPTREE"
 
 #hack `tree' output
